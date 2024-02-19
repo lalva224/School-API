@@ -73,7 +73,7 @@ def get_subject_data():
         for subject in subject_objects
     ]
     return jsonify(subject_list)
-
+#
 def get_teachers_by_subject_id(subject_id_):
     teacher_objects = session.query(Teachers).filter(Teachers.subject_id==subject_id_).all()
     teacher_list = [
