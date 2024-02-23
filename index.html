@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get School Info!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to our database</h1>
+
+    <p>Choose what data you want to get!</p>
+    <div id = "buttons">
+        <div id="student_data" class="button-container"><button onclick="get_student_data()">Get Student Data</button>
+        </div>
+        
+        <div id ="teacher_data"class="button-container"><button onclick="get_teacher_data()">Get Teacher Data</button></div>    
+        <div id = "subject_data"class="button-container"><button onclick="get_subject_data()">Get Subject Data</button></div>
+    </div>
+
+    <div id ="tables">
+        <table id = "student_table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id = "student t_body">
+
+            </tbody>
+        </table>
+
+        <table id = "teacher_table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id = "teacher t_body">
+                
+            </tbody>
+        </table>
+
+        <table id = "subject_table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+
+                </tr>
+            </thead>
+            <tbody id = "subject t_body">
+                
+            </tbody>
+        </table>
+    </div>
+    
+   
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -3,9 +3,12 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-
+#to allow access in my front end
+from flask_cors import CORS,cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'application/json'
 #To prevent sorting when jsonifying
 app.json.sort_keys = False
 engine = create_engine("postgresql://lalva224:1234@localhost/school_flask")
